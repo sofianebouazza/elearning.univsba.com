@@ -1,0 +1,265 @@
+/*=== PWA ==================================================*/
+:root {
+	--downloading-color1: transparent;
+	--downloading-color2: #e0ecec;
+	--downloading-color3: #e0ecec;
+	--update-color1: #e0ecec;
+	--update-color2: #434d51;
+	--download-color1: #e0ecec;
+	--download-color2: #434d51;
+	--downloaded-color1: #e0ecec;
+	--downloaded-color2: #434d51;
+}
+
+.mobileZone {
+	top: 0.6rem;
+	right: 0.2rem;
+	position: absolute;
+	z-index: 2;
+	text-align: right;
+	display: flex;
+	width: fit-content;
+}
+
+.module .mobileZone {
+	bottom: 1.7rem;
+    left: 0.5rem;
+    text-align: left;
+    top: auto;
+}
+
+.eval .mobileZone {
+	display: none;
+}
+
+.mobileZone .downloadZone {
+	display: contents;
+}
+
+.mobileZone button {
+	padding: 0;
+	border: none;
+	background: #e0ecec;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	margin: 0 0.2rem;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.mobileZone button.update,
+.mobileZone button.downloaded,
+.mobileZone button.downloading {
+	background: transparent;
+}
+
+.mobileZone button:hover {
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+button span,
+.mobileZone span > span {
+	display: none;
+}
+
+.mobileZone > div > span {
+	margin: 0 0.2rem;
+}
+
+.mobileZone .icon {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+.mobileZone button .icon {
+	fill: #434e52;
+}
+
+.mobileZone span > .icon,
+.mobileZone button.downloaded > .icon {
+	fill: #dfdfdf;
+}
+
+.mobileZone button.installApp .icon {
+	width: 20px;
+    height: 20px;
+}
+
+.mobileZone button.download .icon {
+	width: 34px;
+    height: 34px;
+}
+
+.mobileZone button.installApp .icon {
+	position: relative;
+	top: 1px;
+}
+
+.offlineDelete {
+	margin: 1.5rem 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.offlineDelete a {
+	color: #e40000;
+    text-decoration: none;
+}
+
+.modal,
+.toast {
+    position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color:rgba(0,0,0,0.6);
+	z-index: 999;
+}
+
+.toast {
+	top: auto;
+    bottom: 5%;
+	left: 2%;
+	right: auto;
+	background: transparent;
+}
+
+.modal .content,
+.toast .content {
+    background-color: #fff;
+    padding: 1em;
+	min-width: 30vw;
+	border-radius: .5em;
+	box-sizing: border-box;
+}
+
+.toast .content {
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	width: fit-content;
+    min-width: fit-content;
+}
+
+.toast .inner {
+	display: flex;
+	align-items: center;
+}
+
+.modal .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal .content.confirm,
+.modal .content.alert {
+	top: 15%;
+    bottom: auto;
+    left: 50%;
+	right: auto;
+	transform: translate(-50%);
+	max-width:600px;
+	width:100%;
+    padding: 4em 2em 5em;
+}
+
+.modal .content .title {
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+
+.modal button,
+.toast button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+.toast button.close,
+.modal button.close {
+	color:#535758;
+	height: 30px;
+	width: 30px;
+	position: relative;
+    top: 2px;
+}
+
+.modal button.close {
+	position: absolute;
+	right: 0;
+    top: 0;
+	z-index: 999;
+}
+
+.modal button.close .icon,
+.toast button.close .icon {
+	fill: #535758;
+}
+
+.modal button.close span,
+.toast button.close span {
+	position: absolute;
+	left: -9999px;
+}
+
+.inner .tools {
+	display:flex;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	top: 0.25em;
+	top: auto;
+	bottom: 1em;
+	right: 1em;
+}
+
+.toast .inner .tools {
+	position: static;
+}
+
+.inner .tools button span {
+	display: block;
+}
+
+.inner .tools button.valid {
+	width:auto;
+	height:auto;
+	padding: 0.5em 1em;
+	font-size: 1.1em;
+	background-color:#434e52;
+	color: #f1f1f1;
+	border-radius: .2em;
+	cursor: pointer;
+}
+
+.toast .inner .tools button.valid {
+	color: #386eb1;
+    background: transparent;
+}
+
+.inner .tools button.cancel {
+	color:#434e52;
+	padding: 0.5em 1em;
+}
+
+@media (max-width: 800px) {
+	.module .mobileZone {
+		left: auto;
+		right: 4rem;
+		top: 0.5rem;
+	}
+}
+/*==========================================================*/
