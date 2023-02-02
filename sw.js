@@ -9,18 +9,18 @@ const DEBUG = false;
 const RUNTIME = "runtime";
 const id = location.pathname;
 // eslint-disable-next-line no-undef, camelcase
-const VERSION = "230202-134229";
+const VERSION = "230128-082238";
 // eslint-disable-next-line no-undef, camelcase
-const CURRENT_CACHES = [id + "_" + "cache_core-v_230202-134229"];
+const CURRENT_CACHES = [id + "_" + "cache_core-v_230128-082238"];
 // eslint-disable-next-line no-undef, camelcase
-const CACHE_RESOURCES = "cache_resources-v_230202-134229";
+const CACHE_RESOURCES = "cache_resources-v_230128-082238";
 if (CACHE_RESOURCES) CURRENT_CACHES.push(id + "_" + CACHE_RESOURCES);
 const CURRENT_CACHES_ZIPS = ["caches/core.zip", "caches/res.zip"];
 const FILES_PER_CACHE = 50;
 // eslint-disable-next-line no-undef, camelcase
 const CACHE_APP_URL = ["index.html","lib-md/s_assmnt.js","lib-md/s_scSearch/scSearch.js","lib-md/w_mathjax/mathjaxMgr.js","lib-md/w_mediaelement/mediaelement.min.js","lib-md/w_molMgr/molMgr.js","lib-md/w_outMgr/outMgr.js","lib-md/w_panel/panelMgr.js","lib-md/w_plainRange/plainRange.css","lib-md/w_plainRange/plainRange.js","lib-md/w_scCodeMgr/scCodeMgr.css","lib-md/w_scCodeMgr/scCodeMgr.js","lib-md/w_scImageMgr/scImageMgr.js","lib-md/w_searchMgr/searchMgr.js","lib-md/w_stlMgr/stlMgr.js","lib-md/w_teMgr/fullscreen-api-polyfill.min.js","lib-md/w_teMgr/teMgr.js","lib-md/w_teMgr/teSubControllers.js","lib-md/w_teMgr/vtt.min.js","lib-md/w_tePlayer/TESettingsFromTracks.js","lib-md/w_tePlayer/icons.svg","lib-md/w_tePlayer/tePlayer.css","lib-md/w_tePlayer/tePlayer.js","lib-md/w_tplMgr/tplMgr.js","lib-md/w_vttTranscript/vttTranscriptMgr.js","lib-sc/assmntDhtmlTransf/empty.gif","lib-sc/assmntDhtmlTransf/select.gif","lib-sc/scAssmntMgr.js","lib-sc/scCoLib.js","lib-sc/scDragMgr.js","lib-sc/scDynUiMgr.js","lib-sc/scMapMgr.js","lib-sc/scPaLib.js","lib-sc/scSiLib.js","lib-sc/scTiLib.js","lib-sc/scTooltipMgr.js","skin/css/main.css","skin/css/print.css","skin/css/skin.css","skin/font/font.css","skin/font/fontello.json","skin/font/fontello.woff2","skin/img/favicon.png","skin/img/lic/by-nc-nd.png","skin/img/lic/by-nc-sa.png","skin/img/lic/by-nc.png","skin/img/lic/by-nd.png","skin/img/lic/by-sa.png","skin/img/lic/by.png","skin/img/lic/gnu-fdl.png","skin/img/lic/publicdomain.png","skin/img/lic/zero.png","skin/img/loader.svg","skin/img/tpl/back-root.png","skin/img/tpl/code.svg","skin/img/tpl/find.svg","skin/img/tpl/scBtn.png","skin/img/tpl/schBtn.svg","skin/img/tpl/schMnuTgle.svg","skin/js/skin.js","skin/player/flv.txt","skin/player/mp3.txt","skin/player/mp4.txt"];
 // eslint-disable-next-line no-undef, camelcase
-const APP_SIZE = 20131593;
+const APP_SIZE = 4977668;
 const IS_CHROME = navigator.userAgent.indexOf("Chrome") !== -1;
 const EXT_CT_MAP = {
 	html: "text/html",
